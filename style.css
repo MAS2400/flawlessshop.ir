@@ -15,6 +15,11 @@ body {
   text-align: center;
   margin: 0px 750px 0px auto;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hemati {
   background: #ffc609;
   display: block;

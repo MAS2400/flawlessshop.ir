@@ -26,7 +26,11 @@
 
     <script>
         function openSite(url) {
-            window.location.href = url;
+            // Add a fade-out effect before navigating
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 300); // Wait for the fade-out transition
         }
 
         // Function to handle the fade-in effect

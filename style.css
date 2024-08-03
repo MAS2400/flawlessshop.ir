@@ -1,105 +1,59 @@
 body {
-		font-family: b yekan;
-		color: #43090a;
-		background: #ffc609;
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9f3', endColorstr='#fcd298', GradientType=0 );
-		direction: rtl;
-    bottom: 100px;
-	}
-  
-.text2 {
-  background: #ffc609;
-  display: block;
-  width: 287px;
-  height: auto;
-  text-align: center;
-  margin: 0px 750px 0px auto;
+    font-family: 'b yekan', sans-serif;
+    color: #43090a;
+    background: #ffc609;
+    direction: rtl;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.hemati {
-  background: #ffc609;
-  display: block;
-  width: 287px;
-  height: auto;
-  text-align: center;
-  margin: 230px 750px 0px auto;
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
 }
-.text {
-  color: #fff;
-  background: #1034d8;
-  width: 500px;
-  font-size: 21px;
-  margin-bottom: 16px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
-  padding: 5px;
-  text-align: center;
-}
-.text3 {
-  color: #fff;
-  background: #dd0819;
-  width: 500px;
-  font-size: 21px;
-  margin-bottom: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
-  padding: 5px;
-  text-align: center;
-  margin: 100px a100px 0px auto;
-}
-.text4 {
-  color: #fff;
-  background: #00aab1;
-  width: 130px;
-  font-size: 21px;
-  margin-bottom: 16px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
-  padding: 5px;
-  float: left;
-  text-align: center;
-  margin-top: 0px;
-}
-.text5 {
-  color: #fff;
-  background: #00aab1;
-  width: 130px;
-  font-size: 21px;
-  margin-bottom: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
-  padding: 5px;
-  float: right;
-  text-align: center;
-  margin-top: 0px;
-}
-.text7 {
-  color: #fff;
-  background: #347a06;
-  width: 500px;
-  font-size: 21px;
-  margin-bottom: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 20px;
-  padding: 5px;
-  text-align: center;
-}
-.text6 {
-    width: 285px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0px;
-}
-.rabi {
-    margin: -95px auto 0px auto;
+
+.links .button {
     display: block;
+    margin: 10px 0;
+}
+
+.text {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.text7 {
+    background: #347a06;
+}
+
+.text3 {
+    background: #dd0819;
+}
+
+.text {
+    background: #1034d8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .text {
+        font-size: 16px;
+    }
 }

@@ -1,7 +1,7 @@
 body {
     font-family: 'b yekan', sans-serif;
     color: #43090a;
-    background: #ffc609;
+    background: #f7f7f7;
     direction: rtl;
     margin: 0;
     display: flex;
@@ -13,27 +13,31 @@ body {
 .container {
     text-align: center;
     background: #fff;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
     margin-bottom: 20px;
 }
 
 .links .button {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
+    text-decoration: none;
 }
 
 .text {
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
-    text-decoration: none;
     font-size: 18px;
+    margin: 10px auto;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .text7 {
@@ -44,15 +48,16 @@ body {
     background: #dd0819;
 }
 
-.text {
+.text2 {
     background: #1034d8;
+}
+
+.button:hover .text {
+    opacity: 0.8;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
     .text {
         font-size: 16px;
     }

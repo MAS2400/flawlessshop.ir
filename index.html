@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background"></div>
     <header>
         <img src="fl.png" alt="Logo" class="logo">
-        <h1>لندینگ معرفی سایت</h1>
+        <h1 class="title">لندینگ معرفی سایت</h1>
     </header>
     <div class="container">
         <div class="site-link" onclick="openSite('https://flawlessaccessory.ir/')">
             <h2>ورود به سایت اکسسوری</h2>
-            <p>به سایت اکسسوری خوش آمدید.</p>
         </div>
         <div class="site-link" onclick="openSite('https://flawlessamazon.ir/')">
             <h2>ورود به سایت آمازون (درحال تکمیل)</h2>
-            <p>به سایت آمازون خوش آمدید. (درحال تکمیل)</p>
         </div>
         <div class="site-link" onclick="openSite('https://flawlessgame.ir/')">
             <h2>ورود به سایت گیم (بزودی)</h2>
-            <p>به سایت گیم خوش آمدید. (بزودی)</p>
         </div>
     </div>
     <footer>
-        <p>تمامی حقوق محفوظ ت &copy; 2024</p>
+        <p>تمامی حقوق محفوظ است &copy; 2024</p>
     </footer>
 
     <script>
         function openSite(url) {
             window.location.href = url;
         }
+
+        // Function to handle the fade-in effect
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.classList.add('loaded');
+        });
     </script>
 </body>
 </html>

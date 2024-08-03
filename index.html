@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="لندینگ معرفی سایت">
     <title>لندینگ معرفی سایت</title>
-    <link rel="icon" type="image/png" sizes="56x56" href="fl.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <img src="fl.png" alt="Logo" class="logo">
+        <h1>لندینگ معرفی سایت</h1>
+    </header>
     <div class="container">
-        <div class="logo">
-            <img class="rabi" src="fl.png" alt="Logo">
+        <div class="site-link" onclick="openSite('https://flawlessaccessory.ir/')">
+            <h2>ورود به سایت اکسسوری</h2>
+            <p>به سایت اکسسوری خوش آمدید.</p>
         </div>
-        <div class="links">
-            <a class="button" href="https://flawlessaccessory.ir/">
-                <p class="text text7">ورود به سایت اکسسوری</p>
-            </a>
-            <a class="button" href="https://flawlessamazon.ir/">
-                <p class="text text3">ورود به سایت آمازون (درحال تکمیل)</p>
-            </a>
-            <a class="button" href="https://flawlessgame.ir/">
-                <p class="text text2">ورود به سایت گیم (بزودی)</p>
-            </a>
+        <div class="site-link" onclick="openSite('https://flawlessamazon.ir/')">
+            <h2>ورود به سایت آمازون (درحال تکمیل)</h2>
+            <p>به سایت آمازون خوش آمدید. (درحال تکمیل)</p>
+        </div>
+        <div class="site-link" onclick="openSite('https://flawlessgame.ir/')">
+            <h2>ورود به سایت گیم (بزودی)</h2>
+            <p>به سایت گیم خوش آمدید. (بزودی)</p>
         </div>
     </div>
+    <footer>
+        <p>تمامی حقوق محفوظ است &copy; 2024</p>
+    </footer>
+
+    <script>
+        function openSite(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>

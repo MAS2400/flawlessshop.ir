@@ -22,6 +22,11 @@ body.loaded {
     opacity: 1;
 }
 
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -84,6 +89,6 @@ header .title {
 }
 
 .site-link:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }

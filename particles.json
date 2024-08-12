@@ -108,7 +108,7 @@
 "config_demo": {
   "hide_card": false,
   "background_color": "#b61924", // Change this to a lighter color if needed
-  "background_image": "url('your-image-url.jpg')", // Ensure the image path is correct
+  "background_image": "url('https://github.com/MAS2400/flawlessshop.ir/blob/main/bg.png')", // Ensure the image path is correct
   "background_position": "50% 50%",
   "background_repeat": "no-repeat",
   "background_size": "cover"

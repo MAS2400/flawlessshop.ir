@@ -12,34 +12,15 @@ particlesJS('particles-js',
                 "value": "#ffffff"
             },
             "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                }
+                "type": "circle"
             },
             "opacity": {
                 "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
+                "random": false
             },
             "size": {
                 "value": 5,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
+                "random": true
             },
             "line_linked": {
                 "enable": true,

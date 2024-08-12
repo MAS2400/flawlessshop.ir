@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flawless Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1 class="title">Flawless Shop</h1>
+        <img src="fl.png" alt="Logo" class="logo">
+    </header>
+    <div class="container">
+        <div class="site-link" onclick="openSite('https://flawlessaccessory.ir/')">
+            <h2>ورود به سایت اکسسوری</h2>
+        </div>
+        <div class="site-link" onclick="openSite('https://flawlessamazon.ir/')">
+            <h2>ورود به سایت آمازون (درحال تکمیل)</h2>
+        </div>
+        <div class="site-link" onclick="openSite('https://flawlessgame.ir/')">
+            <h2>ورود به سایت گیم (بزودی)</h2>
+        </div>
+    </div>
+
+    <script>
+        function openSite(url) {
+            // Add a fade-out effect before navigating
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 300); // Wait for the fade-out transition
+        }
+
+        // Function to handle the fade-in effect
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.classList.add('loaded');
+
+            // Remove blur after 2 seconds
+            setTimeout(() => {
+                document.querySelector('.background').classList.remove('blur');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
